@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adam Gomaa Hassan — Junior Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#f6f7fb;--surface:#ffffff;--ink:#14182b;--muted:#5b6280;--line:#dfe3f0;--accent:#2f4bff;--accent-soft:#e8ecff;--code:#0f1530;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){color-scheme:dark;--bg:#0d1020;--surface:#151a30;--ink:#eef0fa;--muted:#9aa2c4;--line:#262d4d;--accent:#7f93ff;--accent-soft:#1c2347;--code:#080b18}
+}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0d1020;--surface:#151a30;--ink:#eef0fa;--muted:#9aa2c4;--line:#262d4d;--accent:#7f93ff;--accent-soft:#1c2347;--code:#080b18}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+header.hero{padding:72px 0 48px}
+h1{font:700 clamp(2.4rem,7vw,4.2rem)/1.05 Fraunces,Georgia,serif;margin:0 0 14px;letter-spacing:-.02em}
+.role{font-size:1.2rem;color:var(--muted);margin:0 0 22px}
+.lead{max-width:62ch;font-size:1.08rem}
+.contact{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.contact a{background:var(--surface);border:1px solid var(--line);padding:8px 14px;border-radius:999px;color:var(--ink);font-size:.92rem}
+.contact a:hover{border-color:var(--accent);text-decoration:none}
+h2{font:700 1.9rem/1.2 Fraunces,Georgia,serif;margin:0 0 22px}
+section{padding:36px 0}
+.terminal{background:var(--code);color:#cfd6ff;border-radius:12px;padding:20px 22px;font:14px/1.7 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow-x:auto;margin-top:34px}
+.terminal b{color:#8ff0b5;font-weight:500}
+.terminal i{color:#8b94c9;font-style:normal}
+.project{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px;margin-bottom:22px}
+.project.featured{border-color:var(--accent);border-width:2px}
+.project h3{font:700 1.4rem/1.25 Fraunces,Georgia,serif;margin:0 0 6px}
+.badge{display:inline-block;background:var(--accent);color:#fff;font-size:.78rem;padding:2px 10px;border-radius:999px;margin-left:8px;vertical-align:middle;font-family:Inter,sans-serif}
+.tagline{color:var(--muted);margin:0 0 14px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 16px;padding:0;list-style:none}
+.tags li{background:var(--accent-soft);color:var(--accent);padding:3px 11px;border-radius:6px;font-size:.84rem;font-weight:500}
+.project ul.pts{margin:0 0 16px;padding-left:20px}
+.project ul.pts li{margin-bottom:6px}
+.links{display:flex;gap:16px;font-weight:600}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
+.skill{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px}
+.skill h3{margin:0 0 10px;font-size:1rem;font-weight:600}
+.skill p{margin:0;color:var(--muted);font-size:.93rem}
+.certs{display:flex;flex-wrap:wrap;gap:14px}
+.cert{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 20px;flex:1 1 260px}
+.cert strong{display:block}
+.cert span{color:var(--muted);font-size:.92rem}
+footer{padding:40px 0 60px;color:var(--muted);font-size:.92rem;border-top:1px solid var(--line);margin-top:20px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:0 0 16px}
+.stat{background:var(--accent-soft);border-radius:10px;padding:12px 14px}
+.stat b{display:block;font:700 1.35rem Fraunces,Georgia,serif;color:var(--accent)}
+.stat span{font-size:.85rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <h1>Adam Gomaa Hassan</h1>
+  <p class="role">Junior Full-Stack Developer — React, TypeScript and Python (FastAPI)</p>
+  <p class="lead">I build and deploy full-stack web apps with secure authentication, tested APIs and responsive interfaces. I write reusable components, debug UI and layout problems, document my technical decisions, and work comfortably on my own.</p>
+  <div class="contact">
+    <a href="mailto:admjmhh40@gmail.com">admjmhh40@gmail.com</a>
+    <a href="tel:+201118076694">+20 111 807 6694</a>
+    <a href="https://github.com/ADAMDEV01" rel="noopener">GitHub</a>
+    <a href="https://linkedin.com/in/adam-gomaa-8645b0388" rel="noopener">LinkedIn</a>
+    <span class="contact-loc" style="padding:8px 14px;color:var(--muted);font-size:.92rem">Cairo, Egypt</span>
+  </div>
+  <div class="terminal" role="img" aria-label="Test results for Applyboard: 25 passed, coverage 97 percent">
+<i>$</i> pytest --cov<br>
+<b>25 passed</b> <i>·</i> coverage <b>97%+</b><br>
+<i>$</i> docker compose up<br>
+<b>api, db, web — running</b> <i>·</i> CI green on GitHub Actions
+  </div>
+</header>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <article class="project featured">
+    <h3>Applyboard<span class="badge">Latest</span></h3>
+    <p class="tagline">Full-stack job-application tracker</p>
+    <div class="stats">
+      <div class="stat"><b>25</b><span>automated tests</span></div>
+      <div class="stat"><b>97%+</b><span>test coverage</span></div>
+      <div class="stat"><b>JWT + Argon2</b><span>authentication</span></div>
+    </div>
+    <ul class="tags"><li>FastAPI</li><li>PostgreSQL</li><li>React</li><li>TypeScript</li><li>Docker</li><li>GitHub Actions</li></ul>
+    <ul class="pts">
+      <li>Users sign up and log in with JWT tokens, and passwords are hashed with Argon2.</li>
+      <li>Status-transition rules control how an application moves between stages, so a job can't jump to an invalid status.</li>
+      <li>Response-rate analytics show how many applications get replies.</li>
+      <li>Alembic migrations manage every database schema change.</li>
+      <li>25 automated tests with pytest reach 97%+ coverage.</li>
+      <li>Docker Compose runs the whole stack, and a CI pipeline runs the tests on every push.</li>
+    </ul>
+    <div class="links"><a href="https://github.com/ADAMDEV01" rel="noopener">Live demo</a><a href="https://github.com/ADAMDEV01" rel="noopener">Source on GitHub</a></div>
+  </article>
+
+  <article class="project">
+    <h3>Taskflow</h3>
+    <p class="tagline">Task manager with Supabase Auth and Row Level Security</p>
+    <ul class="tags"><li>React</li><li>TypeScript</li><li>Supabase</li><li>TanStack Query</li><li>PostgreSQL</li></ul>
+    <ul class="pts">
+      <li>Supabase Auth handles sign-in, and Row Level Security policies keep each user's data private.</li>
+      <li>CRUD operations use TanStack Query for fetching, caching and mutations.</li>
+    </ul>
+    <div class="links"><a href="https://github.com/ADAMDEV01" rel="noopener">Live demo</a><a href="https://github.com/ADAMDEV01" rel="noopener">Source on GitHub</a></div>
+  </article>
+
+  <article class="project">
+    <h3>Testing Dashboard</h3>
+    <p class="tagline">A React dashboard with a full front-end test suite</p>
+    <ul class="tags"><li>React</li><li>TypeScript</li><li>Vitest</li><li>React Testing Library</li><li>API mocking</li></ul>
+    <ul class="pts">
+      <li>Tests cover user interactions, forms, and loading and error states.</li>
+      <li>Mocked APIs and accessibility-focused assertions keep the tests deterministic and easy to maintain.</li>
+    </ul>
+    <div class="links"><a href="https://github.com/ADAMDEV01" rel="noopener">Live demo</a><a href="https://github.com/ADAMDEV01" rel="noopener">Source on GitHub</a></div>
+  </article>
+
+  <article class="project">
+    <h3>AI Chat Dashboard</h3>
+    <p class="tagline">Responsive chat interface with streaming, retry and persistence</p>
+    <ul class="tags"><li>React</li><li>TypeScript</li><li>localStorage</li><li>Async state</li><li>CSS3</li></ul>
+    <ul class="pts">
+      <li>Simulated streaming shows replies as they arrive, with retry handling and request cancellation.</li>
+      <li>Conversations are saved in localStorage, and message rendering is optimized so the chat recovers smoothly after a reload.</li>
+    </ul>
+    <div class="links"><a href="https://github.com/ADAMDEV01" rel="noopener">Live demo</a><a href="https://github.com/ADAMDEV01" rel="noopener">Source on GitHub</a></div>
+  </article>
+</section>
+
+<section id="skills">
+  <h2>Technical skills</h2>
+  <div class="skills">
+    <div class="skill"><h3>Frontend</h3><p>JavaScript (ES6+), TypeScript, React.js, React Hooks, Context API, component architecture</p></div>
+    <div class="skill"><h3>UI and styling</h3><p>HTML5, CSS3, responsive design, Flexbox, CSS Grid, accessibility, mobile-first design</p></div>
+    <div class="skill"><h3>Backend</h3><p>Python, FastAPI, SQLAlchemy, Alembic, Pydantic, JWT, Argon2</p></div>
+    <div class="skill"><h3>Databases</h3><p>PostgreSQL, SQLite</p></div>
+    <div class="skill"><h3>APIs and data</h3><p>REST APIs, Fetch API, async/await, AbortController, TanStack Query, JSON, Recharts</p></div>
+    <div class="skill"><h3>DevOps</h3><p>Docker, Docker Compose, GitHub Actions</p></div>
+    <div class="skill"><h3>Testing</h3><p>pytest, pytest-cov, Vitest, React Testing Library, API mocking, accessibility assertions</p></div>
+    <div class="skill"><h3>Debugging and performance</h3><p>Chrome DevTools, React DevTools, performance profiling, UI debugging</p></div>
+    <div class="skill"><h3>Tools</h3><p>Git, GitHub, Supabase, Netlify, Vercel, VS Code</p></div>
+  </div>
+</section>
+
+<section id="certs">
+  <h2>Certifications</h2>
+  <div class="certs">
+    <div class="cert"><strong>JavaScript (Intermediate)</strong><span>HackerRank</span></div>
+    <div class="cert"><strong>REST API (Intermediate)</strong><span>HackerRank</span></div>
+  </div>
+</section>
+
+<footer>
+  Open to junior full-stack roles. Reach me at <a href="mailto:admjmhh40@gmail.com">admjmhh40@gmail.com</a>.
+</footer>
+</div>
+</body>
+</html>
