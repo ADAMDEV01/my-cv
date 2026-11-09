@@ -1,4 +1,4 @@
-ADAM GOMAA HASSAN — VERCEL PORTFOLIO
+ADAM GOMAA HASSAN — VERCEL PORTFOLIo
 
 Deployment:
 1. Upload this folder to a GitHub repository, or import the repository into Vercel.
