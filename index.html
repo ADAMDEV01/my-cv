@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="description" content="Adam Gomaa Hassan — Full-Stack Developer building secure, tested, production-style web applications." />
+  <title>Adam Gomaa Hassan | Full-Stack Developer</title>
+  <style>
+    :root{color-scheme:dark;--bg:#090d19;--panel:#11182a;--panel2:#151f35;--text:#edf2ff;--muted:#a8b3ca;--line:#27334b;--accent:#7dd3fc;--accent2:#a78bfa;--green:#86efac}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#1c2850 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:5;background:#090d19d9;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff12}
+    nav{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:.03em}.brand span{color:var(--accent)}
+    .navlinks{display:flex;gap:25px;color:var(--muted);font-size:.92rem}.navlinks a:hover,.textlink:hover{color:var(--accent)}
+    .hero{padding:100px 0 76px;display:grid;grid-template-columns:1.5fr .8fr;gap:55px;align-items:center}
+    .eyebrow{color:var(--accent);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:.76rem}
+    h1{font-size:clamp(2.7rem,6vw,5rem);line-height:1.04;letter-spacing:-.055em;margin:18px 0}
+    h1 em{font-style:normal;background:linear-gradient(100deg,var(--accent),var(--accent2));background-clip:text;color:transparent}
+    .lead{font-size:1.12rem;color:var(--muted);max-width:680px}
+    .actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{padding:11px 18px;border-radius:10px;border:1px solid var(--line);font-weight:700}.btn.primary{background:linear-gradient(110deg,#7dd3fc,#a78bfa);color:#08101e;border:0}.btn:hover{transform:translateY(-2px)}
+    .profile{background:linear-gradient(145deg,#182440,#101728);border:1px solid var(--line);border-radius:22px;padding:27px;box-shadow:0 24px 70px #0005}
+    .profile .monogram{height:70px;width:70px;border-radius:20px;display:grid;place-items:center;background:linear-gradient(140deg,#7dd3fc,#a78bfa);color:#09101e;font-size:1.6rem;font-weight:900}
+    .profile h2{margin:18px 0 4px;font-size:1.2rem}.profile p{margin:0;color:var(--muted);font-size:.92rem}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:25px}.stat{padding:12px 8px;border-radius:12px;background:#ffffff08;text-align:center}.stat strong{display:block;font-size:1.35rem;color:var(--accent)}.stat small{font-size:.72rem;color:var(--muted)}
+    section{padding:58px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:25px}h2.section-title{font-size:2rem;letter-spacing:-.035em;margin:0}.section-note{color:var(--muted);max-width:520px;margin:0}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:30px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:25px}.panel p{color:var(--muted);margin:0}
+    .skills{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}.chip{font-size:.83rem;padding:6px 11px;border:1px solid #33415d;background:#ffffff07;border-radius:999px;color:#dbe7ff}
+    .project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}.project{background:linear-gradient(150deg,var(--panel),#0f1626);border:1px solid var(--line);border-radius:18px;padding:24px;display:flex;flex-direction:column;min-height:300px}
+    .project-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.project h3{font-size:1.25rem;margin:0}.tag{font-size:.72rem;color:var(--green);border:1px solid #315b48;padding:4px 9px;border-radius:999px;white-space:nowrap}
+    .stack{font-size:.78rem;color:var(--accent);margin:9px 0 15px}.project p{color:var(--muted);margin:0 0 14px}.project ul{padding-left:19px;color:var(--muted);margin:0 0 16px}.project li{margin:5px 0}.project .metric{margin-top:auto;padding-top:15px;border-top:1px solid var(--line);font-weight:700;font-size:.9rem}
+    .metric span{color:var(--accent)}
+    .process{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.process article{padding:20px;border:1px solid var(--line);background:#ffffff05;border-radius:15px}.process b{color:var(--accent);display:block;margin-bottom:6px}.process p{margin:0;color:var(--muted);font-size:.92rem}
+    .contact{background:linear-gradient(120deg,#16223d,#11182a);border:1px solid var(--line);border-radius:22px;padding:34px;display:flex;justify-content:space-between;align-items:center;gap:25px}.contact p{color:var(--muted);margin:5px 0 0}.contact-links{display:flex;flex-wrap:wrap;gap:10px}
+    footer{padding:30px 0;color:#8390aa;font-size:.82rem;border-top:1px solid #ffffff12;margin-top:55px}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding:70px 0 45px;gap:30px}.about,.project-grid{grid-template-columns:1fr}.process{grid-template-columns:1fr}.navlinks{gap:12px;font-size:.8rem}.navlinks a:nth-child(2){display:none}.contact{align-items:flex-start;flex-direction:column}.section-head{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+<header><nav class="wrap"><a class="brand" href="#top">ADAM<span>.</span></a><div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav></header>
+<main id="top" class="wrap">
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Full-Stack Developer · Cairo, Egypt</div>
+      <h1>Building web apps that are <em>secure, reliable,</em> and ready to grow.</h1>
+      <p class="lead">I'm Adam Gomaa Hassan. I build production-style applications across frontend and backend engineering, with a focus on multi-tenant systems, authentication, data isolation, workflow integrity, and automated testing.</p>
+      <div class="actions"><a class="btn primary" href="#projects">Explore my work</a><a class="btn" href="mailto:admjmhh40@gmail.com">Contact me</a></div>
+    </div>
+    <aside class="profile">
+      <div class="monogram">AG</div><h2>Adam Gomaa Hassan</h2><p>Full-Stack Developer<br/>Backend Engineering · Secure SaaS · AI Evaluation</p>
+      <div class="stats"><div class="stat"><strong>4</strong><small>Deployed projects</small></div><div class="stat"><strong>593</strong><small>Automated tests</small></div><div class="stat"><strong>94%</strong><small>Backend coverage*</small></div></div>
+      <p style="font-size:.72rem;margin-top:12px">*Applyboard backend coverage reported in the project test suite.</p>
+    </aside>
+  </section>
+  <section id="about">
+    <div class="section-head"><h2 class="section-title">About me</h2><p class="section-note">I care about the engineering behind the interface: clear boundaries, safe data access, predictable workflows, and tests that protect important behavior.</p></div>
+    <div class="about">
+      <div class="panel"><p>My work combines modern React and Next.js interfaces with Python/FastAPI and database-backed services. Across my portfolio, I've worked on workspace-based SaaS, secure job tracking, task collaboration, and AI model evaluation workflows.</p></div>
+      <div class="panel"><p>Rather than treating security and quality as afterthoughts, I build them into application behavior through server-side authorization, row-level security, automated integration tests, migration checks, and CI pipelines.</p></div>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="section-head"><h2 class="section-title">Technical toolkit</h2><p class="section-note">Tools and concepts used across my projects.</p></div>
+    <div class="panel">
+      <b>Languages & frontend</b><div class="skills"><span class="chip">Python</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip">SQL</span><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">TanStack Query</span><span class="chip">Tailwind CSS</span></div>
+      <br/><b>Backend & data</b><div class="skills"><span class="chip">FastAPI</span><span class="chip">REST APIs</span><span class="chip">SQLAlchemy</span><span class="chip">Prisma</span><span class="chip">PostgreSQL</span><span class="chip">SQLite</span><span class="chip">Supabase</span><span class="chip">Alembic</span></div>
+      <br/><b>Security, testing & delivery</b><div class="skills"><span class="chip">JWT</span><span class="chip">Auth.js</span><span class="chip">Argon2</span><span class="chip">RBAC</span><span class="chip">Row Level Security</span><span class="chip">pytest</span><span class="chip">Vitest</span><span class="chip">Playwright</span><span class="chip">Docker Compose</span><span class="chip">GitHub Actions</span><span class="chip">Vercel</span><span class="chip">Ollama</span><span class="chip">Groq</span></div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="section-head"><h2 class="section-title">Selected projects</h2><p class="section-note">Four deployed applications demonstrating different areas of full-stack engineering.</p></div>
+    <div class="project-grid">
+      <article class="project"><div class="project-top"><h3>ClientFlow</h3><span class="tag">Multi-tenant SaaS</span></div><div class="stack">Next.js · TypeScript · PostgreSQL · Prisma · Auth.js</div><p>A workspace-based client and project management platform with a dedicated client portal and controlled deliverable review process.</p><ul><li>Workspace-scoped access and role-based authorization.</li><li>Secure invitations, rate limiting, and private file storage.</li><li>Review state machine with immutable reviewed versions and optimistic revision checks.</li></ul><div class="metric"><span>230</span> automated tests passing in CI · Lighthouse 99 / 100 / 100 / 100</div></article>
+      <article class="project"><div class="project-top"><h3>Applyboard</h3><span class="tag">Backend & security</span></div><div class="stack">React · TypeScript · FastAPI · Python · PostgreSQL</div><p>A full-stack job application tracker for organizing applications, monitoring progress, and reviewing follow-up activity.</p><ul><li>17 API endpoints, searchable records, pagination, and status history.</li><li>Argon2 password hashing and single-use rotating refresh sessions.</li><li>Per-user ownership and backend-enforced status transitions.</li></ul><div class="metric"><span>63</span> CI tests · <span>94.06%</span> backend coverage</div></article>
+      <article class="project"><div class="project-top"><h3>Taskflow</h3><span class="tag">Task workspace</span></div><div class="stack">React · TypeScript · Supabase · PostgreSQL</div><p>A responsive task management workspace for tracking work through status, priority, due dates, search, filters, and List/Kanban views.</p><ul><li>Supabase authentication with PostgreSQL Row Level Security.</li><li>Application-layer user-scoped queries reinforce database policies.</li><li>RLS assertions cover cross-user read, update, delete, and ownership-transfer attempts.</li></ul><div class="metric"><span>26</span> automated tests passing in CI</div></article>
+      <article class="project"><div class="project-top"><h3>EvalForge</h3><span class="tag">AI evaluation platform</span></div><div class="stack">React · TypeScript · FastAPI · PostgreSQL · Ollama · Groq</div><p>An AI model evaluation and testing platform for running repeatable test cases and reviewing model outputs against scoring criteria.</p><ul><li>Datasets, test cases, weighted rubrics, model runs, and persisted results.</li><li>Live Ollama and Groq providers separated from Demo/Mock mode.</li><li>Exact Match, Keyword Match, and rubric-based scoring with exportable reports.</li></ul><div class="metric"><span>274</span> automated tests passing in CI · 22 API endpoints</div></article>
+    </div>
+  </section>
+  <section>
+    <div class="section-head"><h2 class="section-title">How I approach engineering</h2></div>
+    <div class="process"><article><b>01 · Design for boundaries</b><p>Keep users, workspaces, roles, and data access clearly separated and enforce authorization on the server.</p></article><article><b>02 · Make behavior testable</b><p>Cover core workflows with unit, integration, database-policy, and end-to-end tests where appropriate.</p></article><article><b>03 · Ship with confidence</b><p>Use migrations, CI checks, containerized services, and deployment workflows to make changes repeatable.</p></article></div>
+  </section>
+  <section id="contact">
+    <div class="contact"><div><div class="eyebrow">Let's connect</div><h2 style="margin:8px 0 0;font-size:1.8rem">Have a project or opportunity?</h2><p>I'm open to discussing full-stack, frontend, backend, and software engineering opportunities.</p></div><div class="contact-links"><a class="btn primary" href="mailto:admjmhh40@gmail.com">Email me</a><a class="btn" href="https://github.com/ADAMDEV01" target="_blank" rel="noreferrer">GitHub</a><a class="btn" href="https://linkedin.com/in/adam-gomaa-8645b0388" target="_blank" rel="noreferrer">LinkedIn</a></div></div>
+  </section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> Adam Gomaa Hassan · Cairo, Egypt · Built as a lightweight static portfolio.</div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
